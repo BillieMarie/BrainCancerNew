@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="style.css" server="baptisia.dreamhost.com" local="130893997702693479" remote="130893997830000000" Dst="2" />
-<file name="header.php" server="baptisia.dreamhost.com" local="130894003826842734" remote="130894004030000000" Dst="2" />
-<file name="footer.php" server="baptisia.dreamhost.com" local="130894023284009867" remote="130894023470000000" Dst="2" />
-<file name="functions.php" server="baptisia.dreamhost.com" local="130894016255641587" remote="130894016370000000" Dst="2" />
-<file name="index.php" server="baptisia.dreamhost.com" local="130894028018876927" remote="130894028160000000" Dst="2" />
-<file name="page.php" server="baptisia.dreamhost.com" local="130894057733170975" remote="130894057860000000" Dst="2" />
-<file name="search.php" server="baptisia.dreamhost.com" local="130894061275258427" remote="130894061400000000" Dst="2" />
-<file name="404.php" server="baptisia.dreamhost.com" local="130894063583757866" remote="130894063840000000" Dst="2" />
+<file name="style.css" server="baptisia.dreamhost.com" local="130943317978304492" remote="130943592330000000" Dst="1" />
+<file name="header.php" server="baptisia.dreamhost.com" local="130942380248199846" remote="130942380340000000" Dst="1" />
+<file name="footer.php" server="baptisia.dreamhost.com" local="130943214113331865" remote="130943214230000000" Dst="1" />
+<file name="functions.php" server="baptisia.dreamhost.com" local="130943237475540591" remote="130943237490000000" Dst="1" />
+<file name="index.php" server="baptisia.dreamhost.com" local="130943283527253512" remote="130943283650000000" Dst="1" />
+<file name="page.php" server="baptisia.dreamhost.com" local="130941077354776776" remote="130941077450000000" Dst="1" />
+<file name="search.php" server="baptisia.dreamhost.com" local="130925856842575738" remote="130940533240000000" Dst="1" />
+<file name="404.php" server="baptisia.dreamhost.com" local="130914883069268790" remote="130940533180000000" Dst="1" />
+<file name="arc-cont.php" server="baptisia.dreamhost.com" local="130925854559445388" remote="130940533190000000" Dst="1" />
+<file name="archive.php" server="baptisia.dreamhost.com" local="130925854940269338" remote="130940533190000000" Dst="1" />
+<file name="page-full-width.php" server="baptisia.dreamhost.com" local="130925856033563911" remote="130940533230000000" Dst="1" />
+<file name="README.md" server="baptisia.dreamhost.com" local="130908877367478271" remote="130940533240000000" Dst="1" />
+<file name="sidebar-right.php" server="baptisia.dreamhost.com" local="130908877367868883" remote="130940533240000000" Dst="1" />
+<file name="single.php" server="baptisia.dreamhost.com" local="130943234534585348" remote="130943234550000000" Dst="1" />
+<file name="testing" server="baptisia.dreamhost.com" local="130908877368044659" remote="130940533250000000" Dst="1" />
+<file name="page-twocol.php" server="baptisia.dreamhost.com" local="130941035649330893" remote="130941078840000000" Dst="1" />
 </dwsync>

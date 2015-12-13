@@ -1,17 +1,15 @@
 <?php get_header();?>
-<!-----page.php--------->
+<!-----blog.php--------->
 
 <div id="content">
-
    
     <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
     
-    <article class="halfcol left">
-        
+         
         <?php the_post_thumbnail(); ?>
         
         <p><?php the_content(); ?></p>
-   </article>      
+   
        
     
     <?php endwhile; else: ?>
@@ -21,6 +19,6 @@
     
 
 </div><!-- #content --> 
-
-
+  
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

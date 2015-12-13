@@ -7,7 +7,7 @@
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    
     
 <?php wp_head(); ?>
 </head>
@@ -16,7 +16,7 @@
 	<hgroup>
             
             <div class="showmobile">
-            <a id="menubutton" href=""><img src="http://localhost:8080/wp-content/uploads/2015/12/menubutton.png" width="58" height="41" alt="Menu"></a> </div>           
+            <img id="menubutton" src="http://www.the-web-pros.com/stagingarea/braincancer/wp-content/uploads/2015/12/menubutton.png" width="58" height="41" alt="Menu"></div>           
             
             <div class="hidemobile">
             <form role="search" method="get" id="searchform" class="searchform" action="<?php bloginfo('home'); ?>/"><!-- our search button-->
@@ -26,20 +26,19 @@
 				</div>
 			</form>
 
-            <div id="donate"><a href=""><b> Donate </b> </div></a><!-- our donate button-->
+            <div class="donate"><a href="http://www.the-web-pros.com/stagingarea/braincancer/?p=53"><b> Donate </b> </div></a><!-- our donate button-->
             </div><!------Close hidemobile------>
             
             
             
             <div id="menu-social" class="menu-social"></div>
     
-    </hgroup>
+</hgroup>
    
     <div id="mainnav"><?php wp_nav_menu(array("menu" => "Main")); ?></div>
-    
-    
+
     <div class="showmobile">
-    <div id="donate"><a href=""><b> Donate </b> </a></div><!-- our donate button-->
+    <div class="donate"><a href=""><b> Donate </b> </a></div><!-- our donate button-->
             
     <form role="search" method="get" id="searchform" class="searchform" action="<?php bloginfo('home'); ?>/"><!-- our search button-->
 				<div>
@@ -51,4 +50,5 @@
      
      <nav class="breadcrumb">
     <?php if( function_exists( 'bcn_display' )){bcn_display();} ?></nav>
+    
     

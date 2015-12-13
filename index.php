@@ -5,20 +5,14 @@
     
     <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
     
-    <article class="halfcol left">
-      <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-        <?php the_post_thumbnail(); ?>
+    <article class="threecol">
+    <div class="featured-img"><?php the_post_thumbnail("full"); ?></div>
+    <div class="category"><h3><?php the_category(); ?></h3></div>
+    <div class="title"><h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3></div>
+      
+      <p><?php the_excerpt(); ?><div class="readmore"><a href="<?php the_permalink(); ?>"> Read More &raquo</a></p></div>
+   </article>    
         
-        <p><?php the_content(); ?></p>
-   </article>      
-        <p><small>Posted
-        <time datetime="<?php the_time('Y-m-d'); ?>">
-        <?php the_time('M j'); ?>
-        </time>
-      by <?php the_author(); ?>
-      <?php comments_number("0 comments", "1 comment", "% comments"); ?>
-    </small></p>    
-  
     
   
   <?php endwhile; else: ?>
@@ -32,5 +26,8 @@ previous_posts_link( 'Newer Posts' ); ?>
   
 </div><!-- #content -->   
 
+<div id="sidebar">
+<?php get_sidebar(right); ?> 
+</div><!-- #sidebar -->
 
 <?php get_footer(); ?>

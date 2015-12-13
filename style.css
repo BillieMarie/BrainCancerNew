@@ -102,7 +102,7 @@ hgroup a:hover{
 	background: #EEE;
 }
 
-hgroup #donate a{
+hgroup .donate a{
 	border-bottom: #2bb9e6 2px outset;
 	padding:10px 14px;
 	margin-top:32px;
@@ -116,7 +116,7 @@ hgroup #donate a{
 	float:right;
 	}
 	
-hgroup #searchform input{
+hgroup .searchform input{
 	margin:32px 30px 0 0;
 	border:#3a9142 1px solid;
 	border-radius: 5px;
@@ -156,7 +156,6 @@ hgroup .socialitems a{
 	clear:both;
 	text-align:center;
 	width:100%;
-	
 }
 
 #mainnav ul{
@@ -172,12 +171,20 @@ hgroup .socialitems a{
 	color:#000;
 	text-align:left;
 	font-size:1em;
-	padding:0 15px;
+	padding:0 30px;
 	line-height: 2.5;
 }
 
 #mainnav li a:hover{
 	color: #fff;
+	background-color:#2ec086;
+}
+
+#mainnav span{
+	padding:8px 27px 9px 0;
+}
+
+#mainnav span:hover{
 	background-color:#2ec086;
 }
 
@@ -335,6 +342,54 @@ nav.breadcrumb a:hover{ /************Breadcrumb nav*********/
 	padding:0 1%;
 }
 
+/***************************Blog Index Styles************************************/
+
+article{
+	display:block;
+	float:left;
+}
+
+article .featured-img{
+	width:100%;
+	margin:10px auto;
+}
+
+article .category ul{
+	margin-left:-30px;
+}
+
+article .category li, article .category li a{
+	list-style:none;
+	text-decoration:none;
+	font-family:Lora;
+	font-weight:500;
+	color:gray;
+}
+
+article .readmore a{
+	text-decoration:none;
+	color:green;
+	font-family:Open Sans;
+	font-weight:500;
+	padding:0 10px;
+}
+
+article .readmore a:hover{
+	font-weight:900;
+}
+
+article .title a{
+	text-transform:uppercase;
+	text-decoration:none;
+	color:#000;
+	font-weight:semi-bold;
+	padding:0 10px;
+}
+
+article p{
+	padding:0 10px;
+}
+
 
 /**************** Sidebar Code for when a sidebar page is used ****************/
 
@@ -395,24 +450,23 @@ nav.breadcrumb a:hover{ /************Breadcrumb nav*********/
 
 #footer .socialitems{
 	display:block;
-	margin: 0 42%
+	margin: 0 39%
 }
 
 #footer .socialitems li{
-	border: #fff 1px solid;
-	margin: 25px auto;
-	padding:2px 8px;
+	margin: 25px 0;
+	padding:2px 6px;
 	display: inline-block;
 	float:left;
-	margin-right:5px;
-	text-decoration: none;
 }
 
-#footer .socialitems a{
-	text-decoration: none;
-	color: #fff;
+#footer .socialitems a:hover{
+	background-color:#373d4c;
 }
- #footer #tagline{
+	
+	
+	
+#footer #tagline{
 	 display:inline-block;
 	 font-size:.85em;
 }
@@ -469,9 +523,26 @@ hgroup{
 
 /***************************Mobile Menu*********************/
 
+#mainnav, .donate, .searchform{ 
+display: none;
+}
+
+.show-menu #mainnav, .show-menu .donate, .show-menu .searchform{
+display: block;
+}
+
 #mainnav{
 	clear:both;
 	border-bottom: 1px solid #fff;
+	background-color:#2ec086;
+}
+
+#mainnav span{
+	position:relative;
+	display:block;
+	float:right;
+	margin:0 20px;
+	padding:0 10px;
 }
 
 #mainnav ul {
@@ -491,18 +562,28 @@ hgroup{
 	list-style: none;
 	width: 100%;
 	background-color:#2ec086;
-	text-transform:capitalize; 
+	text-transform:uppercase;
 }
 
 #mainnav ul li a:hover {
 	background: #309b6f;
 	color: #fff;
-	width:100%
+	width:100%;
+	line-height:2.5;
 }
+
+li .show-sub-menu{
+	border-left: 0;
+	display: block;
+	border-bottom:none;
+}
+
+
 
 /******************Nav Dropdown 768 code******************/
 #mainnav li ul{
 	position: relative;
+	box-sizing: border-box;
 }
 
 #mainnav li ul li a {
@@ -510,6 +591,12 @@ hgroup{
 	text-align:left;
 	padding-left:30px;
 }
+
+#mainnav li ul li span{
+	background-color:#2ec086;
+}
+	
+
 
 #mainnav li a, #mainnav li {
 	display: inline-block;
@@ -530,14 +617,14 @@ hgroup{
 	visibility:visible;
 }
 
-.showmobile #searchform{
+.showmobile .searchform{
 	text-align:left;
 	padding-left:30px;
 	border-bottom: 1px solid #000;
 	background-color:#2ec086;
 }
 
-.showmobile #searchform input{
+.showmobile .searchform input{
 	margin:15px 0;
 	border:#3a9142 1px solid;
 	border-radius: 5px;
@@ -546,24 +633,23 @@ hgroup{
 	display: inline-block;
 }
 
-.showmobile #donate{
+.showmobile .donate{
 	text-align:left;
 	line-height: 3;
 	border-bottom: 1px solid #fff;
 	background-color:#2ec086;
-	text-transform:capitalize;
 	}
 	
-.showmobile #donate a{
+.showmobile .donate a{
 	font-family:Open Sans;
 	font-weight:800;
 	text-decoration: none;
-	text-transform:capitalize;
+	text-transform:uppercase;
 	color:#fff;
 	padding-left:30px;
 }
 
-.showmobile #donate a:hover{
+.showmobile .donate a:hover{
 	
 }
 
@@ -638,7 +724,7 @@ nav.breadcrumb{
 
 #footer .socialitems{
 	display:block;
-	margin: 0 10%
+	margin: 0 8%
 }
 /*********************** Media query for 480 pixels and below **************************************************************************/
 
